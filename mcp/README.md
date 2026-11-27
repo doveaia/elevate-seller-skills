@@ -53,7 +53,7 @@ With a valid key the server lists its tools (twelve at the time of writing). Wit
 
 ## Notes per agent
 
-- **Claude Code**: the project `.mcp.json` uses `${ELEVATE_SELLER_API_KEY}` from your environment. The plugin's own `.mcp.json`, at the root of this repository, uses `${user_config.api_key}` instead: that value is the key Claude Code asks for when the plugin is enabled, and it only works inside the plugin. Claude Code asks you to approve the servers of a project `.mcp.json` before it connects to them.
+- **Claude Code**: the project `.mcp.json` uses `${ELEVATE_SELLER_API_KEY}` from your environment. The plugin's own server, declared in `.claude-plugin/plugin.json`, uses `${user_config.api_key}` instead: that value is the key Claude Code asks for when the plugin is enabled, and it only works inside the plugin. Claude Code asks you to approve the servers of a project `.mcp.json` before it connects to them.
 - **OpenCode**: the file uses the `mcp.servers` form of the OpenCode 2.x schema (the older form, with servers directly under `mcp`, is deprecated), with `"oauth": false` because the server takes an API key header. With OpenCode 2.3.0, `opencode mcp list` printed "No MCP servers configured" even for a server added with `opencode mcp add`; the server was connected in sessions all the same.
 - **Hermes Agent**: you can also put `ELEVATE_SELLER_API_KEY=<your API key>` in `~/.hermes/.env`. If the variable is not set, Hermes refuses to connect and names the variable.
 - **Codex CLI**: `bearer_token_env_var` makes Codex send `Authorization: Bearer <value of the variable>`. A project `.codex/config.toml` is read only in trusted projects.

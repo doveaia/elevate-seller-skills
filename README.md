@@ -3,7 +3,7 @@
 This repository is a **Claude Code plugin marketplace** and the **`elevate-seller` plugin** itself. It ships:
 
 - the **product analysis skill** (`skills/elevate-seller-product-analysis/`): the method an AI agent follows to analyse an Amazon product with the seller's Elevate Seller grid (twelve criteria), decide, and record its opinion in the application;
-- the connection to the **Elevate Seller MCP server** (`https://api.elevateseller.com/mcp`), authenticated by an API key of your organisation: Claude Code gets it with the plugin (`.mcp.json`), and the folder [`mcp/`](mcp/README.md) holds ready-to-copy configuration files for other agents.
+- the connection to the **Elevate Seller MCP server** (`https://api.elevateseller.com/mcp`), authenticated by an API key of your organisation: Claude Code gets it with the plugin (`mcpServers` in `.claude-plugin/plugin.json`), and the folder [`mcp/`](mcp/README.md) holds ready-to-copy configuration files for other agents.
 
 The skill contains no data of any organisation and no threshold value: the agent reads the seller's grid with the `get_analysis_grid` tool.
 
