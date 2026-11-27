@@ -1,6 +1,6 @@
 {
   "name": "elevate-seller",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Analyse Amazon products for sourcing with the seller's Elevate Seller grid, then record the opinion in the application. Includes the product analysis skill and the Elevate Seller MCP server.",
   "author": {
     "name": "DoveAIA",
@@ -15,15 +15,6 @@
       "description": "An API key of your organisation, created in Elevate Seller under Settings › API keys. A read-write key is needed to record opinions.",
       "sensitive": true,
       "required": true
-    }
-  },
-  "mcpServers": {
-    "elevate-seller": {
-      "type": "http",
-      "url": "https://api.elevateseller.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
-      }
     }
   },
   "privacyPolicyUrl": "https://dash.elevateseller.com/privacy"

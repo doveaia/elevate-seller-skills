@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "elevate-seller": {
+      "serverUrl": "https://api.elevateseller.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:ELEVATE_SELLER_API_KEY}"
+      }
+    }
+  }
+}

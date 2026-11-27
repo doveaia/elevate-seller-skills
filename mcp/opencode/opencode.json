@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "elevate-seller": {
+        "type": "remote",
+        "url": "https://api.elevateseller.com/mcp",
+        "oauth": false,
+        "headers": {
+          "Authorization": "Bearer {env:ELEVATE_SELLER_API_KEY}"
+        }
+      }
+    }
+  }
+}

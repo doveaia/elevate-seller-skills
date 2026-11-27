@@ -1,0 +1,5 @@
+# Merge this table into ~/.codex/config.toml (or .codex/config.toml in a trusted project).
+# Codex sends "Authorization: Bearer <value of ELEVATE_SELLER_API_KEY>".
+[mcp_servers.elevate-seller]
+url = "https://api.elevateseller.com/mcp"
+bearer_token_env_var = "ELEVATE_SELLER_API_KEY"

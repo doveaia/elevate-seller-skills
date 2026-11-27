@@ -1,0 +1,6 @@
+# Merge this block into ~/.hermes/config.yaml (keep your other settings).
+mcp_servers:
+  elevate-seller:
+    url: "https://api.elevateseller.com/mcp"
+    headers:
+      Authorization: "Bearer ${ELEVATE_SELLER_API_KEY}"
