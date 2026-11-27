@@ -1,0 +1,12 @@
+{
+  "name": "elevate-seller",
+  "owner": { "name": "DoveAIA", "url": "https://elevateseller.com" },
+  "description": "Elevate Seller tools for AI agents: the product analysis skill and the connection to the Elevate Seller MCP server.",
+  "plugins": [
+    {
+      "name": "elevate-seller",
+      "source": "./",
+      "description": "Analyse Amazon products with the Elevate Seller grid and record the opinion in the application."
+    }
+  ]
+}
